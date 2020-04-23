@@ -15,6 +15,10 @@
 
 class CommandLine
 {
+  public:
 
+    CommandLine(int argc, char **argv);
+
+    ~CommandLine();
 };
 #endif /* SYS_COMMANDLINE_H_ */
