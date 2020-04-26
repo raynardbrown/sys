@@ -13,6 +13,8 @@
 #ifndef SYS_COMMANDLINE_H_
 #define SYS_COMMANDLINE_H_
 
+class CommandLineOption;
+
 class CommandLine
 {
   public:
@@ -20,5 +22,7 @@ class CommandLine
     CommandLine(int argc, char **argv);
 
     ~CommandLine();
+
+    void registerCommandLineOption(CommandLineOption * opt);
 };
 #endif /* SYS_COMMANDLINE_H_ */
