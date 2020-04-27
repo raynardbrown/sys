@@ -13,11 +13,15 @@
 #ifndef SYS_COMMANDLINEOPTION_H_
 #define SYS_COMMANDLINEOPTION_H_
 
+#include <string>
+
 class CommandLineOption
 {
   public:
 
-    CommandLineOption();
+    explicit CommandLineOption(const std::string& longOptionName);
+
+    explicit CommandLineOption(char shortOptionName);
 
     ~CommandLineOption();
 };
