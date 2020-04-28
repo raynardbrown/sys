@@ -21,6 +21,9 @@ class CommandLineOption
 
     explicit CommandLineOption(const std::string& longOptionName);
 
+    CommandLineOption(const std::string& longOptionName,
+                      CommandLineOption * aliasOf);
+
     explicit CommandLineOption(char shortOptionName);
 
     ~CommandLineOption();
