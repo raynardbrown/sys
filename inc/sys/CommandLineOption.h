@@ -27,5 +27,7 @@ class CommandLineOption
     explicit CommandLineOption(char shortOptionName);
 
     ~CommandLineOption();
+
+    CommandLineOption * getAliasOf() const;
 };
 #endif /* SYS_COMMANDLINEOPTION_H_ */
