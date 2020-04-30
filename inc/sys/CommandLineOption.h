@@ -28,6 +28,10 @@ class CommandLineOption
 
     ~CommandLineOption();
 
+    std::string getLongName() const;
+
+    char getShortName() const;
+
     CommandLineOption * getAliasOf() const;
 };
 #endif /* SYS_COMMANDLINEOPTION_H_ */
