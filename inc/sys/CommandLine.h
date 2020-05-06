@@ -24,5 +24,7 @@ class CommandLine
     ~CommandLine();
 
     void registerCommandLineOption(CommandLineOption * opt);
+
+    friend class UiApplication;
 };
 #endif /* SYS_COMMANDLINE_H_ */
